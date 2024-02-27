@@ -1,0 +1,37 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+main{
+    display: flex;
+}
+
+#list{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    background-color: burlywood;
+    flex: 6;
+}
+#list p{
+    margin-left: 15px;
+}
+#form{
+    background-color: aquamarine;
+    flex: 6;
+}
+
+html body main section#form div .btn-primary {
+    background-color: black;
+}
+
+hr{
+    border: 3px solid rgb(46, 16, 4);
+}
+
+section{
+    padding: 15px;
+}
