@@ -1,5 +1,4 @@
 let task=[];
-let taskID=0;
 
 $(document).ready(function(){
     $("#btnSaveTask").click(saveTask);
@@ -8,16 +7,6 @@ $(document).ready(function(){
 
     displayTask(task);
 });
-
-function Task(title, description, color, date, status, budget){
-    this.title = title;
-    this.description = description;
-    this.color = color;
-    this.date = date;
-    this.status = status;
-    this.budget = budget;
-    this.id=taskID++;
-}
 
 
 function saveTask(){

@@ -1,0 +1,23 @@
+/* Doing in class */
+hmtl, body {
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 47px);
+}
+
+#list{
+    background-color: burlywood;    
+    flex: 6;
+}
+#form{
+    background-color: aquamarine;    
+    flex: 6;
+}
+
+.btn-color {
+    background-color: aqua;
+    color:black;
+}
