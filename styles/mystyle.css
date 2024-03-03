@@ -9,12 +9,14 @@ main{
     display: flex;
 }
 
+#listSection{
+    background-color: burlywood;
+    flex: 6;
+}
 #list{
     display:grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    background-color: burlywood;
-    flex: 6;
 }
 #list p{
     margin-left: 15px;
@@ -24,7 +26,7 @@ main{
     flex: 6;
 }
 
-html body main section#form div .btn-primary {
+html body main section div .btn-primary {
     background-color: black;
 }
 

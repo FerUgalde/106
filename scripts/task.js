@@ -1,12 +1,12 @@
-let taskID=0;
+// Task Constructor
 class Task{
-    constructor(title, description, color, date, status, budget){
+    constructor(title, description, date, budget, status, importance, color){
         this.title = title;
         this.description = description;
-        this.color = color;
         this.date = date;
-        this.status = status;
         this.budget = budget;
-        this.id=taskID++;
+        this.status = status;
+        this.importance = importance;
+        this.color = color;
     }
 }

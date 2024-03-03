@@ -10,42 +10,57 @@
 <body>
     <h1>Task manager</h1>
     <main>
-        <section id="list"></section>
+        <section id="listSection">
+            <div id="list"></div>
+            <div>
+                <button class="btn btn-sm btn-primary mt-3" id="lastTen">View the last 10 tasks</button>
+            </div>
+        </section>
         <section id="form">
             <div>
                 <button class="btn btn-sm btn-primary" id="btnHidde">Hidde Form</button>
                 <button class="btn btn-sm btn-primary visually-hidden" id="btnView">View Form</button>
             </div>
             <form>
-                <div class="mt-5">
+                <div class="mt-3">
                     <label class="form-label">Title</label>
                     <input type="text" class="form-control" id="inputTitle">
                 </div>
-                <div class="mt-5">
+                <div class="mt-3">
                     <label class="form-label">Description</label>
                     <textarea rows="3" class="form-control" id="inputDescription"></textarea>
                 </div>
-                <div class="mt-5">
-                    <label class="form-label">Color</label>
-                    <input type="color" class="form-control" id="inputColor">
-                </div>
-                <div class="mt-5">
+                <div class="mt-3">
                     <label class="form-label">Start Date</label>
                     <input type="datetime-local" class="form-control" id="inputDate">
                 </div>
-                <div class="mt-5">
-                    <label class="form-label">Status</label>
-                    <select id="inputStatus">
-                        <option value="" disabled selected>--- Defines the Status ---</option>
-                        <option value="Important">Important</option>
-                        <option value="NotImportant">Not important</option>
-                    </select>
-                </div>
-                <div class="mt-5">
+                <div class="mt-3">
                     <label class="form-label">Budget</label>
                     <input type="number" class="form-control" id="inputBudget">
                 </div>
-                <div>
+                <div class="mt-3">
+                    <label class="form-label">Status</label>
+                    <select class="form-control" id="inputStatus">
+                        <option value="" disabled selected>--- Defines the Status ---</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="queue">Queue</option>
+                        <option value="terminated">Terminated</option>
+                        <option value="finished">Finished</option>
+                    </select>
+                </div>
+                <div class="mt-3">
+                    <label class="form-label">Importance</label>
+                    <select class="form-control" id="inputImportance">
+                        <option value="" disabled selected>--- Defines the Importance ---</option>
+                        <option value="important">Important</option>
+                        <option value="not-important">Not important</option>
+                    </select>
+                </div>
+                <div class="mt-3">
+                    <label class="form-label">Color</label>
+                    <input type="color" class="form-control" id="inputColor">
+                </div>
+                <div class="mt-5 mb-5">
                     <button class="btn btn-sm btn-primary" type="button" id="btnSaveTask">Save</button>
                 </div>
             </form>

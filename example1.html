@@ -26,5 +26,65 @@
             </script>
         </div>
     </div>
+
+
+
+
+    <script>
+        function displayTask(){
+            $("#list").empty();
+            let dispTask = "";
+            for(i=0;i<task.length;i++){
+                let dtask = task[i];
+
+                if(dtask.importance == "important"){
+                    dispTask += `
+                    <div>
+                        <hr>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Title: ${dtask.title}</p>
+                        <p>Description: ${dtask.description}</p>
+                        <p>Start Date: ${dtask.date}</p>
+                        <p>Budget: ${dtask.budget}</p>
+                        <p>Status: ${dtask.status}</p>
+                        <p>Color: ${dtask.color}</p>
+                    </div>    
+                    `;
+                }else if (dtask.importance == "not-important") {
+                    dispTask += `
+                    <div>
+                        <hr>
+                        <i class="fa-regular fa-star"></i>
+                        <p>Title: ${dtask.title}</p>
+                        <p>Description: ${dtask.description}</p>
+                        <p>Start Date: ${dtask.date}</p>
+                        <p>Budget: ${dtask.budget}</p>
+                        <p>Status: ${dtask.status}</p>
+                        <p>Color: ${dtask.color}</p>
+                        </div>    
+                        `;
+                    } else {
+                        dispTask += `
+                    <div>
+                    <hr>
+                    <p>Title: ${dtask.title}</p>
+                    <p>Description: ${dtask.description}</p>
+                    <p>Start Date: ${dtask.date}</p>
+                    <p>Budget: ${dtask.budget}</p>
+                        <p>Status: ${dtask.status}</p>
+                        <p>Color: ${dtask.color}</p>
+                        </div>    
+                        `;
+                }
+            }
+            $("#list").html(dispTask);
+        }
+    </script>
+
+
+
+
 </body>
 </html>
+
+
